@@ -1,0 +1,309 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- Ensures that content sizes to the initial viewport size -->
+    <meta name="viewport" content="width=device-width" initial-scale="1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Fixes rendering issues in Apple Mail on iOS 10+ -->
+    <meta name="x-apple-disable-message-reformatting" />
+    <style type="text/css">
+
+    @media screen {
+        @font-face {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v12/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+        }
+
+        }
+
+        /* Fixes */
+        /* Adjust text size for multiple platforms */
+
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        /* Prevents automatic table borders */
+
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+        }
+
+        /* Prevent automatic platform specific styling */
+
+        table,
+        tr,
+        td,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        p,
+        a,
+        ul,
+        li,
+        ol {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            color: #000;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Removes automatic spacing in Outlook */
+
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+
+        /* Line-height adjustment for Outlook.com */
+
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+            line-height: 100%;
+        }
+
+        /* Outlook hidden class */
+
+        .outlook-hidden {
+            mso-hide: all;
+        }
+
+        /* Outlook.com hidden class */
+
+        .ExternalClass .outlook-hidden,
+        [owa] .outlook-hidden {
+            display: none;
+        }
+
+        /* Continues automatic nested table styling in Yahoo */
+
+        table table table {
+            table-layout: auto;
+        }
+
+        /* Disables automatic link styling in Yahoo */
+
+        .yshortcuts a {
+            border-bottom: none !important;
+        }
+
+        /* Prevents automatic autolink styling on Apple devices */
+
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+        }
+
+        /* Ensures the email fills the entire viewport */
+
+        html,
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+
+        /* Hidden content designed to show in message preview */
+
+        .hidden-preheader {
+            display: none;
+            font-size: 1px;
+            line-height: 1px;
+            max-height: 0px;
+            max-width: 0px;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+        }
+
+        /* Use this to adjust the content placement. */
+
+        .main-background-table {
+            border: 0;
+            width: 100%;
+            /* Height:100% will center all content; height:auto to align the content to top */
+            height: 100%;
+            /* Sets the background color of the main viewport */
+            background-color: #eee;
+        }
+
+        /* Centered div provides a layer of separation between the 1st and 2nd level tables */
+
+        .center-element {
+            width: 100%;
+            height: auto;
+            margin: auto;
+        }
+
+        .header {
+            background-color: #eee;
+        }
+
+        blockquote {
+            padding: 15px;
+            font-style: oblique;
+            background-color: #eee;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px;
+        }
+
+        .body {
+            background-color: #fff;
+        }
+
+        .footer {
+            background-color: #eee;
+        }
+
+        /* Values that establish the width and properties of the main message column */
+
+        .main-content-container {
+            border: 0;
+            width: 600px;
+            height: 100%;
+            /* This text-align is important. Because of the way tables work, non-block-level items, like images, can be aligned using the text-align property */
+            text-align: center;
+            margin: auto;
+            padding: 0;
+        }
+
+        /* Make sure the max-width of this media query matches the width of .main-content-container */
+
+        @media screen and (max-width: 600px) {
+
+            /* Note: Media queries require !important designators to override inlined styles */
+            /* This selector is redundant if you set the height to auto in the main styling */
+            .main-background-table {
+                height: auto !important;
+            }
+
+            /* Limit content to width of screen */
+            .main-content-container {
+                width: 100% !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: sans-serif;">Building with love and passion for over 40 years | Voted #1 Best New Builder in the 2019 Fresno Bee's People's Choice Awards</div>
+
+<table bgcolor="#fff" border="0" cellpadding="0" cellspacing="0" height="100%" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;border-collapse:collapse;" width="100%"><!-- Visually Hidden Preheader Text : BEGIN --><!-- Visually Hidden Preheader Text : END --><!-- Email Header : BEGIN -->
+	<tbody>
+		<tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+			<td style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">
+			<table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="email-container" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;table-layout:auto;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;margin:0 auto !important;" width="600">
+				<tbody>
+					<tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;background-color: #ffffff;">
+						<td style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;" class="">
+						<p style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;margin:0;margin-bottom:10px;display: block; padding: 10px 20px 10px 20px; text-align: center; line-height: 10px; font-size: 10px; font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; font-weight: 500; font-style: italic;">Having trouble viewing this email?&nbsp;<a href="{{View_Online}}" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color: #004876;">Click here to view in your browser.</a></p>
+						</td>
+					</tr>
+					<!-- HERO HEADER BEGIN -->
+					<tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;background-color: #ffffff;">
+						<td style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;" class=""><a href="http://gvhomes.com/" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"><img alt="Granville Homes: Built with Love and Passion" height="auto" src="https://storage.pardot.com/857603/15360/GV_transparent_banner.png" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;display: block; border: 0; background-color: #ffffff;" width="100%"></a></td>
+					</tr>
+					<!-- HERO HEADER END -->
+					<tr class="body" style="background-color: #fff;">
+						<td class="body" pardot-data="line-height:1.6;" style="padding: 10%; border: 1px solid lightgray; line-height: 1.6;">
+						<p style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;text-align: left;  font-family: 'Montserrat', Helvetica, Arial, 'sans-serif'; font-size: 16px; mso-height-rule: exactly; line-height:1.6; color: #252525;">For what, you might ask?</p>
+
+						<p data-mce-style="font-weight: 400; font-size: 16px; line-height: 24px; text-align: left;">By supporting&nbsp;Granville, you are making it possible for us to give back to local organizations that provide food, shelter, healthcare, and education right here in our backyard.</p>
+
+						<p data-mce-style="font-weight: 400; font-size: 16px; line-height: 24px; text-align: left;">At&nbsp;Granville, our business is building homes, but our passion is serving our community and giving back. That passion is what drives the&nbsp;Granville&nbsp;Foundation to help improve the well-being of people in the Central Valley.</p>
+
+						<p data-mce-style="font-weight: 400; font-size: 16px; line-height: 24px; text-align: left;">Last year alone, we were able to assist more than 60 nonprofit and community organizations dedicated to improving the lives of families in our valley including:</p>
+
+						<ul data-mce-style="font-weight: 400; font-size: 16px; line-height: 24px; text-align: left;">
+							<li><a data-mce-href="https://www.youtube.com/watch?v=qWBEOnBtK_8" href="https://www.youtube.com/watch?v=qWBEOnBtK_8">Angels of Grace</a></li>
+							<li><a data-mce-href="https://www.youtube.com/watch?v=w0N1r7kQuHc" href="https://www.youtube.com/watch?v=w0N1r7kQuHc">Art of Life Cancer Foundation</a></li>
+							<li><a data-mce-href="https://www.youtube.com/watch?v=L8I31tyPrqo" href="https://www.youtube.com/watch?v=L8I31tyPrqo">Breaking the Chains</a></li>
+							<li><a data-mce-href="https://www.youtube.com/watch?v=u1nyKtTbqcg" href="https://www.youtube.com/watch?v=u1nyKtTbqcg">CASA of Fresno &amp;&nbsp;Madera&nbsp;Counties</a></li>
+							<li><a data-mce-href="https://www.youtube.com/watch?v=aA46T1r6M68" href="https://www.youtube.com/watch?v=aA46T1r6M68">Central California Food Bank</a></li>
+							<li><a data-mce-href="https://www.youtube.com/watch?v=YRR8_amvjW8" href="https://www.youtube.com/watch?v=YRR8_amvjW8">Foundation for&nbsp;Clovis&nbsp;Schools</a></li>
+							<li><a data-mce-href="https://www.youtube.com/watch?v=f_ICB9MSutI" href="https://www.youtube.com/watch?v=f_ICB9MSutI">Foundation for&nbsp;Sanger&nbsp;Schools</a></li>
+							<li><a data-mce-href="https://www.youtube.com/watch?v=ovFA5L8rZhw&amp;t=40s" href="https://www.youtube.com/watch?v=ovFA5L8rZhw&amp;t=40s">Fresno Police Chaplaincy Program</a></li>
+							<li><a data-mce-href="https://www.youtube.com/watch?v=fLeVQ21k6PQ" href="https://www.youtube.com/watch?v=fLeVQ21k6PQ">Hinds Hospice</a></li>
+							<li><a data-mce-href="https://www.youtube.com/watch?v=_ReOoVox9nU" href="https://www.youtube.com/watch?v=_ReOoVox9nU">Parents &amp; Addicts in Need</a></li>
+						</ul>
+
+						<p data-mce-style="font-weight: 400; font-size: 16px; line-height: 24px; text-align: left;">Something as simple as subscribing to our email list, liking or sharing our posts on Facebook and&nbsp;Instagram, or joining the&nbsp;GV&nbsp;family community as a&nbsp;Granville&nbsp;homeowner - all of these are ways you can help us spread the word and support the amazing work of local&nbsp;nonprofits!</p>
+
+						<p data-mce-style="font-weight: 400; font-size: 16px; line-height: 24px; text-align: left;">To learn more about our philanthropic efforts, read on here.</p>
+						<!-- Button : Begin -->
+
+						<table align="center " border="0 " cellpadding="0 " cellspacing="0 " style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; table-layout: fixed !important; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0     !important; border-collapse: collapse !important; margin: auto;">
+							<tbody>
+								<tr>
+									<td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; line-height: 1em;" class="">&nbsp;</td>
+								</tr>
+								<tr>
+									<td class="body_copy " style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; font-family: 'Montserrat', Helvetica, Arial, 'sans-serif'; font-size: 14px; line-height: 20px !important; color: #7f7f7f;">
+									<table align="center " bgcolor="#174a7c " border="0 " cellpadding="0 " cellspacing="0 " height="44 " style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; table-layout: fixed !important; mso-table-lspace: 0pt     !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; margin: 0 auto !important; border-radius: 4px; text-align: center;" width="225 ">
+										<tbody>
+											<tr>
+												<td align="center " height="44 " pardot-data="link-color:#ffffff;" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; font-family: 'Montserrat', Helvetica, Arial, 'sans-serif'; font-size: 14px; padding: 5px; text-align: center;" valign="middle " class=""><a href="https://gvhomeofhope.com" target="_blank"><span style="color:#FFFFFF;">LEARN MORE</span></a></td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- Button : END --></td>
+					</tr>
+					<tr class="header" style="background-color: #051F59;">
+						<td class="header" height="10" style="background-color:#051F59">&nbsp;</td>
+					</tr>
+					<!-- FOOTER -->
+					<tr class="footer" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+						<td bgcolor="#78909C" class="footer" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;text-align: center; vertical-align: top; padding: 0;">
+						<table>
+							<tbody>
+								<tr>
+									<td class="">
+									<p style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;margin:0;margin-bottom:10px;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;margin:0;padding:10px;margin-bottom:10px;
+                             font-size: 11px; font-family: 'Montserrat', Helvetica, Arial, 'sans-serif'; font-style: italic; color: #242424; "><br>
+									Granville Homes, 1396 W. Herndon Ave, Ste. #101, Fresno, CA 93711, United States</p>
+
+									<p style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;margin:0;margin-bottom:10px;font-size: 12px; font-family: 'Montserrat', Helvetica, Arial, 'sans-serif'; color: #242424; padding:10px;"><strong style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%; ">559.445.9000&nbsp; | &nbsp;888.445.9770&nbsp; | &nbsp;<a href="http://www.gvhomes.com " style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color: #242424; ">GVHomes.com</a></strong></p>
+
+									<p style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;margin:0;margin-bottom:10px;font-size: 12px; font-family: 'Montserrat', Helvetica, Arial, 'sans-serif'; color: #242424; padding:10px;">RE License # 01258537<br style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%; ">
+									Contractor License # 586845<br style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%; ">
+									&nbsp;</p>
+									</td>
+									<td style="text-align: center;" class="">
+									<p style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;margin:0;"><a href="http://facebook.com/granvillehomes" style="color:#2886CD;text-decoration:none;font-weight:bold;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"><img alt="facebook_favicon" height="25px" src="https://storage.pardot.com/857603/15388/fb_icon.png" style="outline:none;text-decoration:none;border-radius:2px;border:none;font-family:'Nunito Sans', 'Roboto', Arial, sans-serif !important;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;" width="25px"></a>&nbsp; <a href="https://www.linkedin.com/company/granville-homes---new-homes-fresno" style="color:#2886CD;text-decoration:none;font-weight:bold;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"><img alt="linkedin_favicon " height="25px" src="http://go.pardot.com/l/857603/2020-05-07/b6hh/857603/14876/linkedin_icon.png" style="outline:none;text-decoration:none;border-radius:2px;border:none;font-family:'Nunito Sans', 'Roboto', Arial, sans-serif !important;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;" width="25px"></a>&nbsp; <a href="https://www.youtube.com/user/GranvilleHomes" style="color:#2886CD;text-decoration:none;font-weight:bold;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"><img height="25px" src="http://go.pardot.com/l/857603/2020-05-07/b6hk/857603/14882/youtube_icon.png" style="outline:none;text-decoration:none;border-radius:2px;border:none;font-family:'Nunito Sans', 'Roboto', Arial, sans-serif !important;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;" width="25px"></a>&nbsp; <a href="https://twitter.com/gvhomes" style="color:#2886CD;text-decoration:none;font-weight:bold;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"><img height="25px" src="http://go.pardot.com/l/857603/2020-05-07/b6hf/857603/14880/twitter_icon.png" style="outline:none;text-decoration:none;border-radius:2px;border:none;font-family:'Nunito Sans', 'Roboto', Arial, sans-serif !important;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;" width="25px"></a>&nbsp; <a href="https://www.pinterest.com/granvillehomes/" style="color:#2886CD;text-decoration:none;font-weight:bold;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"><img height="25px" src="http://go.pardot.com/l/857603/2020-05-07/b6j1/857603/14896/pinterest_icon.png" style="outline:none;text-decoration:none;border-radius:2px;border:none;font-family:'Nunito Sans', 'Roboto', Arial, sans-serif !important;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%; margin: 0px; display: inline;" width="25px"></a>&nbsp; <a href="https://www.instagram.com/granvillehomes/" style="color:#2886CD;text-decoration:none;font-weight:bold;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"><img height="25px" src="http://go.pardot.com/l/857603/2020-05-07/b6h9/857603/14874/ig_icon.png" style="outline:none;text-decoration:none;border-radius:2px;border:none;font-family:'Nunito Sans', 'Roboto', Arial, sans-serif !important;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;" width="25px"></a></p>
+
+									<p style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;margin:0;margin-bottom:10px;text-align: center; font-size: 11px; font-family: 'Montserrat', Helvetica, Arial, 'sans-serif'; font-weight: 500;
+                font-style: italic; color: #000000; ">Don't want to receive these emails anymore? <a href="{{Unsubscribe}}" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color: #004876; ">Unsubscribe from our list.</a></p>
+									<img src="http://go.pardot.com/l/857603/2020-05-07/b6h7/857603/14872/equal_housing.png" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%; "></td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<!-- END FOOTER --><!-- END CONTENT --><!-- End Centered Fixed-Width Table --><!-- End Main Content -->
+</body>
+</html>
